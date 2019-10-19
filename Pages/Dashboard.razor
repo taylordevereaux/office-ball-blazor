@@ -1,0 +1,63 @@
+﻿@page "/"
+
+<div class="container-fluid">
+    <div class="row d-sm-flex align-items-center mb-4">
+      <div class="col">
+        <h3 class="h3 mb-0 text-gray-800">Scoreboard</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xl-3 mb-4">
+        <HighlightWidget
+          Color="primary"
+          Value="highlights.mostShots"
+          Text="Most Consecutive Shots"
+          Icon="dribbble"
+        ></HighlightWidget>
+      </div>
+      <div class="col-md-6 col-xl-3 mb-4">
+        <HighlightWidget
+          Color="success"
+          Value="highlights.mostTrickShots"
+          Text="Most Trick Shots"
+          Icon="magic"
+        ></HighlightWidget>
+      </div>
+      <div class="col-md-6 col-xl-3 mb-4">
+        <HighlightWidget
+          Color="danger"
+          Value="highlights.mostDisasters"
+          Text="Most disasters"
+          Icon="ambulance"
+        ></HighlightWidget>
+      </div>
+      <div class="col-md-6 col-xl-3 mb-4">
+        <HighlightWidget
+          Color="warning"
+          Value="highlights.daysSinceLastDisaster"
+          Text="Days since last disaster"
+          Icon="hourglass-start"
+        ></HighlightWidget>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-lg-5 col-xl-4">
+        <Players :players="players" @playerAdded="addPlayer" @incrementShots="incrementShots" />
+      </div>
+      <div class="col-lg-7 col-xl-8">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Shots</h6>
+          </div>
+          <div class="card-body">
+            <ShotsChart :players="players" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+@code {
+
+
+}
